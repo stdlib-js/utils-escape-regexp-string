@@ -1,0 +1,37 @@
+{
+  "name": "@stdlib/utils-escape-regexp-string",
+  "version": "0.0.0",
+  "description": "Escape a regular expression string or pattern.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-escape-regexp-string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "regular",
+    "expression",
+    "regex",
+    "regexp",
+    "string",
+    "escape",
+    "esc",
+    "pattern"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
