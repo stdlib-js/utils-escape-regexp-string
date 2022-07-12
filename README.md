@@ -41,7 +41,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import rescape from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@v0.0.9-deno/mod.js';
+import rescape from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@deno/mod.js';
 ```
 
 #### rescape( str )
@@ -107,7 +107,7 @@ try {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import rescape from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@v0.0.9-deno/mod.js';
+import rescape from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@deno/mod.js';
 
 var out = rescape( '/beep/' );
 // returns '/beep/'
