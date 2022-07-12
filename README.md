@@ -41,7 +41,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import rescape from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@esm/index.mjs';
+import rescape from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@v0.0.9-esm/index.mjs';
 ```
 
 #### rescape( str )
@@ -112,7 +112,7 @@ try {
 <body>
 <script type="module">
 
-import rescape from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@esm/index.mjs';
+import rescape from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@v0.0.9-esm/index.mjs';
 
 var out = rescape( '/beep/' );
 // returns '/beep/'
