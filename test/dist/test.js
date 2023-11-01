@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,108 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var rescape = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof rescape, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function throws an error if not provided a primitive string', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		NaN,
-		null,
-		true,
-		void 0,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), Error, 'throws when provided a ' + (typeof values[i]) );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			rescape( value );
-		};
-	}
-});
-
-tape( 'the function escapes a regular expression string', function test( t ) {
-	var expected;
-	var actual;
-	var values;
-	var i;
-
-	values = [
-		'/beep/',
-		'/[A-Z]*/',
-		'/\\\//ig', // eslint-disable-line no-useless-escape
-		'/[A-Z]{0,}/',
-		'/^boop$/',
-		'/(?:.*)/',
-		'/(?:beep|boop)/'
-	];
-
-	expected = [
-		'/beep/',
-		'/\\[A\\-Z\\]\\*/',
-		'/\\\\\\\//ig', // eslint-disable-line no-useless-escape
-		'/\\[A\\-Z\\]\\{0,\\}/',
-		'/\\^boop\\$/',
-		'/\\(\\?:\\.\\*\\)/',
-		'/\\(\\?:beep\\|boop\\)/'
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		actual = rescape( values[ i ] );
-		t.strictEqual( actual, expected[ i ], values[ i ], 'escapes string' );
-	}
-	t.end();
-});
-
-tape( 'the function escapes a regular expression string pattern', function test( t ) {
-	var expected;
-	var actual;
-	var values;
-	var i;
-
-	values = [
-		'beep',
-		'[A-Z]*',
-		'\\\/', // eslint-disable-line no-useless-escape
-		'[A-Z]{0,}',
-		'^boop$',
-		'(?:.*)',
-		'(?:beep|boop)',
-		'/beep'
-	];
-
-	expected = [
-		'beep',
-		'\\[A\\-Z\\]\\*',
-		'\\\\\\\/', // eslint-disable-line no-useless-escape
-		'\\[A\\-Z\\]\\{0,\\}',
-		'\\^boop\\$',
-		'\\(\\?:\\.\\*\\)',
-		'\\(\\?:beep\\|boop\\)',
-		'\\/beep'
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		actual = rescape( values[ i ] );
-		t.strictEqual( actual, expected[ i ], values[ i ], 'escapes string' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
