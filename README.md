@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-rescape = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@umd/browser.js' )
+rescape = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var rescape = require( 'path/to/vendor/umd/utils-escape-regexp-string/index.js' 
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -145,7 +145,7 @@ try {
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-escape-regexp-string@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
