@@ -79,10 +79,10 @@ Escapes a [regular expression][mdn-regexp] `string` or pattern.
 
 ```javascript
 var str = rescape( '/[A-Z]*/' );
-// returns '/\\[A\\-Z\\]\\*/'
+// returns '/\[A\-Z\]\*/'
 
 str = rescape( '[A-Z]*' );
-// returns '\\[A\\-Z\\]\\*'
+// returns '\[A\-Z\]\*'
 ```
 
 If provided a value which is not a primitive `string`, the function **throws** a `TypeError`.
@@ -145,40 +145,40 @@ out = rescape( 'beep' );
 // returns 'beep'
 
 out = rescape( '/[A-Z]*/' );
-// returns '/\\[A\\-Z\\]\\*/'
+// returns '/\[A\-Z\]\*/'
 
 out = rescape( '[A-Z]*' );
-// returns '\\[A\\-Z\\]\\*'
+// returns '\[A\-Z\]\*'
 
 out = rescape( '/\\\//ig' );
-// returns '/\\\\\\\//ig'
+// returns '/\\\//ig'
 
 out = rescape( '\\\/' );
-// returns '\\\\\\\/'
+// returns '\\\/'
 
 out = rescape( '/[A-Z]{0,}/' );
-// returns '/\\[A\\-Z\\]\\{0,\\}/'
+// returns '/\[A\-Z\]\{0,\}/'
 
 out = rescape( '[A-Z]{0,}' );
-// returns '\\[A\\-Z\\]\\{0,\\}'
+// returns '\[A\-Z\]\{0,\}'
 
 out = rescape( '/^boop$/' );
-// returns '/\\^boop\\$/'
+// returns '/\^boop\$/'
 
 out = rescape( '^boop$' );
-// returns '\\^boop\\$'
+// returns '\^boop\$'
 
 out = rescape( '/(?:.*)/' );
-// returns '/\\(\\?:\\.\\*\\)/'
+// returns '/\(\?:\.\*\)/'
 
 out = rescape( '(?:.*)' );
-// returns '\\(\\?:\\.\\*\\)'
+// returns '\(\?:\.\*\)'
 
 out = rescape( '/(?:beep|boop)/' );
-// returns '/\\(\\?:beep\\|boop\\)/'
+// returns '/\(\?:beep\|boop\)/'
 
 out = rescape( '(?:beep|boop)' );
-// returns '\\(\\?:beep\\|boop\\)'
+// returns '\(\?:beep\|boop\)'
 ```
 
 </section>
@@ -227,7 +227,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -253,8 +253,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
