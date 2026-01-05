@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`989e453`](https://github.com/stdlib-js/stdlib/commit/989e45330b4284265444e286a926a693ec8518aa) - **docs:** update copy _(by Athan Reines)_
 -   [`c4671b1`](https://github.com/stdlib-js/stdlib/commit/c4671b1cef6f00d28d483cfb9b558d9c1d5f81c9) - **docs:** resolve lint failures _(by Athan Reines)_
 
 </details>

@@ -75,7 +75,7 @@ var rescape = require( '@stdlib/utils-escape-regexp-string' );
 
 #### rescape( str )
 
-Escapes a [regular expression][mdn-regexp] `string` or pattern.
+Escapes a [regular expression][mdn-regexp] string or pattern.
 
 ```javascript
 var str = rescape( '/[A-Z]*/' );
@@ -83,17 +83,6 @@ var str = rescape( '/[A-Z]*/' );
 
 str = rescape( '[A-Z]*' );
 // returns '\[A\-Z\]\*'
-```
-
-If provided a value which is not a primitive `string`, the function **throws** a `TypeError`.
-
-```javascript
-try {
-    rescape( null );
-    // throws an error...
-} catch ( err ) {
-    console.error( err );
-}
 ```
 
 </section>
@@ -120,6 +109,8 @@ try {
     | Plus Sign     | `+`      |
     | Vertical Bar  | `&#124;` |
     | Question Mark | `?`      |
+
+-   If the function is provided a value which is not a string, the function **throws** an error.
 
 </section>
 
